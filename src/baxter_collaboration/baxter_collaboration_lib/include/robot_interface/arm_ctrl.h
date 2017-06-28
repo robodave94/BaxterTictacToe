@@ -6,6 +6,7 @@
 #include "robot_utils/ros_thread.h"
 #include "robot_interface/robot_interface.h"
 #include "robot_interface/gripper.h"
+#include <actionlib/server/simple_action_server.h>
 
 #include "baxter_collaboration_msgs/AskFeedback.h"
 #include "baxter_collaboration_msgs/ArmState.h"
@@ -44,14 +45,18 @@ private:
     // or will wait the external planner to take care of that
     bool      internal_recovery;
 
-    // Service to request actions to
+    //TODO: ACTION SERVER IMPLEMENTATION
+    actionlib::SimpleActionServer action_server;
+
+
+    // Service to request actions to #
     ros::ServiceServer  service;
 
     // [UC edition] Service to request actions. This service is going to call an unblocking
-    // version of service callback.
+    // version of service callback.#
     ros::ServiceServer  unblocking_service;
 
-    // Internal service used for multi-arm actions
+    // Internal service used for multi-arm actions #
     ros::ServiceServer service_other_limb;
 
     // Publisher to publish the high-level state of the controller
