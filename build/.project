@@ -6,106 +6,23 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
 			<triggers>clean,full,incremental,</triggers>
 			<arguments>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
-					<value>clean</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.append_environment</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.stopOnError</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.command</key>
-					<value>/usr/bin/make</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.contents</key>
-					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.target.inc</key>
-					<value>all</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.arguments</key>
-					<value></value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>/home/baxterdev/git/BaxterTictacToe/build</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
-					<value>false</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.environment</key>
-					<value>VERBOSE=1|ROS_ROOT=/opt/ros/indigo/share/ros|ROS_PACKAGE_PATH=/home/baxterdev/git/BaxterTictacToe/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks|PYTHONPATH=/home/baxterdev/git/BaxterTictacToe/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages|PATH=/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games|LD_LIBRARY_PATH=/home/baxterdev/git/BaxterTictacToe/devel/lib:/opt/ros/indigo/lib|PKG_CONFIG_PATH=/home/baxterdev/git/BaxterTictacToe/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig|CMAKE_PREFIX_PATH=/home/baxterdev/git/BaxterTictacToe/devel:/opt/ros/indigo|</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.target.auto</key>
-					<value>all</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
-					<value>false</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.target.clean</key>
-					<value>clean</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
-					<value>all</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.buildArguments</key>
-					<value></value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.location</key>
-					<value>/home/baxterdev/git/BaxterTictacToe/build</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
-					<value>all</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.core.errorOutputParser</key>
-					<value>org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
-				</dictionary>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
-		<nature>org.eclipse.cdt.make.core.makeNature</nature>
-		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
 		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
@@ -119,32 +36,22 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[lib] gtest</name>
+			<name>[Targets]/[exe] baxterDisplay</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[lib] gtest_main</name>
+			<name>[Targets]/[exe] baxter_controller</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[lib] aruco</name>
+			<name>[Targets]/[exe] baxter_display</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] optimalmarkers</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] svox_tts</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] aruco_ros</name>
+			<name>[Targets]/[exe] board_state_sensor</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -154,7 +61,37 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>[Targets]/[exe] flatpack_action_provider</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hsv_detector</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] hsv_range_finder</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ik_tests</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>[Targets]/[exe] marker_publisher</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] modular_action_provider</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] optimalmarkers</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -164,7 +101,62 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[lib] trac_ik</name>
+			<name>[Targets]/[exe] svox_tts</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_robot_interface</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_util</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_utils</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] tictactoe_brain</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] tower_action_provider</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] aruco</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] aruco_ros</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] baxter_tictactoe</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] flatpack_furniture</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] gtest</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] gtest_main</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -184,82 +176,7 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test_robot_interface</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] test_util</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] baxter_controller</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] baxter_display</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] flatpack_action_provider</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] hsv_detector</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] modular_action_provider</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] tower_action_provider</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] flatpack_furniture</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] baxterDisplay</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] board_state_sensor</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] hsv_range_finder</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] test_utils</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] tictactoe_brain</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] baxter_tictactoe</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ik_tests</name>
+			<name>[Targets]/[lib] trac_ik</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
